@@ -1,0 +1,106 @@
+.SideDrawer {
+    grid-row: 2 / -1;
+    height: 100%;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    border-radius: 0 20px 20px 0;
+    position: absolute;
+    transition: all .4s;
+    z-index: 100;
+}
+.LinkContainer {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow: auto;
+}
+.Toggler {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #02c2c2;
+    color: #fff6eb;
+    border: 1px solid #016464;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-block;
+    z-index: -1;
+    cursor: pointer;
+}
+.SideDrawer a {
+    text-decoration: none;
+    color: #686868;
+    padding: 3px 10px;
+    border-radius: 10px;
+    /* border-bottom-right-radius: 10px; */
+}
+.SideDrawer a:hover {
+    color: #f0f0f0;
+    background-color: darkcyan;
+}
+.SideDrawer a:not(:last-child) {
+    margin-bottom: 5px;
+}
+.Active {
+    color: #fff !important;
+    background-color: #02a7a7;
+}
+@media (min-width: 300px) {
+    .SideDrawer {
+        font-size: .9rem;
+        width: 150px;
+    }
+    .LinkContainer {
+        padding: 10px;
+    }
+    .Close {
+        transform: translateX(-150px);
+    }
+    .Toggler {
+        padding: 5px 8px;
+        right: -31px;
+        top: 104px;
+    }
+}
+@media (min-width: 600px) {
+    .SideDrawer {
+        font-size: 1rem;
+        width: 200px;
+    }
+    .SideDrawer a {
+        padding-left: 50px;
+    }
+    .Close {
+        transform: translateX(-200px);
+    }
+    .Toggler {
+        padding: 10px 16px;
+        right: -48px;
+        top: 122px;
+    }
+}
+@media (min-width: 800px) {
+    .SideDrawer {
+        width: 240px;
+    }
+    .SideDrawer a {
+        padding-left: 80px;
+    }
+    .Close {
+        transform: translateX(-240px);
+    }
+    .Toggler {
+        top: 96px;
+        padding: 10px 16px;
+    }
+}
+@media (min-width: 1200px) {
+    .SideDrawer {
+        width: 320px;
+    }
+    .SideDrawer a {
+        padding-left: 100px;
+    }
+    .Close {
+        transform: translateX(-320px);
+    }
+}

@@ -1,0 +1,74 @@
+.Toolbar {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.KirdiChiqdi {
+    align-self: stretch;
+    display: flex;
+}
+
+.MainPage {
+    background-color: darkcyan;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #303030; 
+}
+.MainPage a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: all .2s;
+}
+@media (min-width: 300px) {
+    .Toolbar {
+        font-size: .9rem;
+    }
+    .MainPage a {
+        padding: 0 35px;
+    }
+
+    .KirdiChiqdi a {
+        padding: 0 1rem;
+    }
+}
+@media (min-width: 600px) {
+    .Toolbar {
+        font-size: 1.2rem;
+    }
+    .MainPage a {
+        padding: 0 50px;
+    }
+
+
+    .KirdiChiqdi a {
+        padding: 0 1.4rem;
+    }
+}
+@media (min-width: 800px) {
+    .Toolbar {
+        font-size: 1.2rem;
+    }
+
+    .KirdiChiqdi a {
+        padding: 0 1.6rem;
+    }  
+}
+@media (min-width: 1200px) {
+    .Toolbar {
+        font-size: 1.2rem;
+    }
+
+    .KirdiChiqdi a {
+        padding: 0 2rem;
+    }   
+}
+

@@ -1,0 +1,193 @@
+.KirimHistory {
+    font-size: 1.2rem;
+}
+
+.KirimHistory p {
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+
+input {
+    text-transform: capitalize;
+}
+
+.SearchBoxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.SearchBoxes input {
+    width: 24%;
+}
+.Titles {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 5px;
+    border: 1px solid #a7a7a7;
+}
+.Titles span {
+    font-weight: 700;
+    padding: 5px 0px;
+    background-color: darkcyan;
+    color: aliceblue;
+    flex: 3;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.EditingField {
+    display: flex;
+    flex-direction: column;
+}
+.EditingField h3, .EditingField h2 {
+    text-align: center;
+    margin: .5rem 0;
+}
+.EditingField button {
+    margin-top: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ececec;
+    transition: all .2s;
+}
+.EditingField button:hover {
+    background-color: #1ab87b;
+}
+.Prices { display: flex; } 
+.Prices input { width: 75%;} 
+.Prices select { width: 25%; }
+
+.Stores {
+    display: flex;
+    flex-direction: column;
+}
+.Ombors {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+    margin-bottom: .5rem;
+    font-size: .8rem;
+}
+.Konteners {
+    display: grid;
+}
+.Ombors input, .Konteners input { margin-left: 2px; }
+.Ombors label, .Konteners label { padding: 5px; }
+.Ombors label:hover, .Konteners label:hover { 
+    border-radius: 10px;
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) {
+    .KirimHistory {
+        font-size: .6rem;
+    }
+
+    .ProdsContainer {
+        height: 530px;
+        overflow: auto;
+    }
+    .Titles span:last-child {
+        flex: 1;
+    }
+    .EditingField {
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
+    .EditingField input {
+        width: 75%;
+    }
+    .Prices input {
+        width: 50%;
+    }
+    .Price select {
+        width: 20%
+    }
+    .EditingField input, .EditingField select {
+        display: flex;
+        flex-direction: column;
+        font-size: .6rem;
+    }
+    .Ombors {
+        display: grid;
+        font-size: .7rem;
+        grid-template-columns: repeat(3, 30%);
+        border: none;
+    }
+    .Konteners {
+        font-size: .6rem;
+        grid-template-columns: repeat(4, 24%);
+    }
+    .Konteners label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 600px) {
+    .KirimHistory {
+        font-size: 1rem;
+    }
+
+    .ProdsContainer {
+        height: 600px;
+        overflow: auto;
+    }
+    .ProdsContainer span:first-child {
+        text-transform: capitalize;
+    }
+    .Titles span:last-child {
+        flex: 1;
+        box-sizing: border-box;
+    }
+    .Titles span:last-child {
+        min-width: auto;
+    }
+    .EditingField {
+        padding: 0;
+        text-align: center;
+        align-items: stretch;
+    }
+    .EditingField input {
+        width: 95%;
+    }
+    .EditingField input, .EditingField select {
+        display: flex;
+        flex-direction: column;
+        font-size: .9rem;
+    }
+    .Ombors {
+        display: grid;
+        font-size: 1.2rem;
+        grid-template-columns: repeat(3, 32%);
+    }
+    .Ombors label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .Konteners {
+        grid-template-columns: repeat(4, 25%);
+        font-size: 1rem;
+        padding: 5px;
+        border: 1px solid #919191;
+    }
+    .Konteners label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 800px) {
+    .Titles span:last-child {
+        flex: 1;
+        box-sizing: border-box;
+    }
+}

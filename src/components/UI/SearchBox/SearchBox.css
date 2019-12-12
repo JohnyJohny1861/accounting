@@ -1,0 +1,34 @@
+.SearchBox {
+    border-radius: 15px;
+    border: 1px solid #04970c;
+    box-sizing: border-box;
+    transition: all .4s;
+}
+
+.SearchBox:focus,
+.SearchBox:active {
+    outline: none;
+    border: 1px solid #04c40d;
+    box-shadow: 0 5px 10px #7e7e7e;
+    backface-visibility: hidden;
+    transform: scale(1.05, 1);
+}
+
+@media (min-width: 300px) {
+    .SearchBox {
+        padding: 5px;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .SearchBox {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 1000px) {
+    .SearchBox {
+        font-size: 1.4rem;
+    }
+}

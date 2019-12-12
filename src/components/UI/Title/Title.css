@@ -1,0 +1,9 @@
+.Title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #007070;
+    text-shadow: 2px 5px 5px #919191;
+}

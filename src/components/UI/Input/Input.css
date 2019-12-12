@@ -1,0 +1,79 @@
+.Input, .Select, .Button {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #04970c;
+}
+
+.Button {
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.Success {
+    background-color: #04970c;
+    color: #f1f1f1;
+}
+.Success:hover {
+    transform: translateY(-1px);
+    background-color: #02aa0b;
+    color: #ffffff;
+}
+
+.Success:active {
+    outline: none;
+    transform: translateY(1px);
+}
+.Success:focus {
+    outline: none;
+}
+
+.Danger {
+    background-color: #bb0202;
+    color: #f1f1f1;
+}
+
+.Danger:hover {
+    transform: translateY(-1px);
+    background-color: #f10808;
+    color: #ffffff;
+}
+
+.Danger:active {
+    outline: none;
+    transform: translateY(1px);
+}
+.Danger:focus {
+    outline: none;
+}
+
+.Disable {
+    background-color: #d4d4d4;
+    color: #a3a3a3;
+    cursor: default;
+}
+
+@media (min-width: 300px) {
+    .Input, .Select, .Button {
+        padding: 5px;
+        margin: 1px 0;
+        font-size: 1rem;
+    }
+    .Button {
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+}
+@media (min-width: 600px) {
+    .Input, .Select, .Button {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+    .Button {
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}

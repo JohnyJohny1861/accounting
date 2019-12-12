@@ -1,0 +1,80 @@
+.HisProd {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 5px;
+    background-color: #f7f7f7;
+    border: 1px solid #a7a7a7;
+    transition: all .2s;
+    font-size: inherit;
+}
+.HisProd:hover {
+    background-color: #6d6d6d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.HisProd span {
+    flex: 3;
+    flex-shrink: 0;
+    border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HisProd span:last-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 0;
+}
+.HisProd span:last-child i {
+    display: inline-block;
+}
+.HisProd span:last-child i:first-child {
+    color: #d6c313;
+    cursor: pointer;
+    /* margin-bottom: 5px;
+    margin-left: 5px; */
+}
+.HisProd span:last-child i:first-child:hover {
+    color: #60fff2;
+}
+/* .HisProd span:last-child i:last-child {
+    color: #ff7268;
+    cursor: pointer;
+} */
+/* .HisProd span:last-child i:last-child:hover {
+    color: #60fff2;
+    cursor: pointer;
+} */
+
+@media (min-width: 300px) {
+    .HisProd span:last-child {
+        /* padding: 2px; */
+    }
+}
+@media (min-width: 400px) {
+    .HisProd span:last-child {
+        /* padding: 3px; */
+    }
+}
+@media (min-width: 500px) {
+    .HisProd span:last-child {
+        /* padding: 5px; */
+    }
+}
+@media (min-width: 600px) {
+
+}
+@media (min-width: 800px) {
+    .HisProd span:last-child {
+        flex-direction: row;
+        /* padding: 5px; */
+    }
+    .HisProd span:last-child i:first-child {
+        margin: 0;
+    }
+}

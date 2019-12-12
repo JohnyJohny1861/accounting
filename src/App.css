@@ -1,0 +1,33 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+}
+.Auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem auto;
+    font-size: 1.5rem;
+}
+.Auth input {
+    font-size: inherit;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+.Auth button {
+    font-size: inherit;
+    background-color: darkcyan;
+    color: aliceblue;
+    padding: 10px 15px;
+}
+.Auth input:hover, .Auth input:active, .Auth input:focus {
+    outline: none;
+}
+@media (min-width: 300px) {
+}
+@media (min-width: 300px) {
+
+}
+@media (min-width: 300px) {
+
+}

@@ -1,0 +1,83 @@
+.ToggleBtn{
+    height: 100%;
+    position: relative;
+    border: none;
+    outline: none;
+}
+
+.Toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: center;
+    text-align: center;
+    font-size: inherit;
+    outline: none;
+    border: 1px solid #303030;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.Toggler:hover, .Toggler:active {
+    outline: none;
+}
+
+.Content {
+    background-color: #ffebeb;
+    position: absolute;
+    box-sizing: border-box;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #7c7c7c;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    z-index: 100;
+}
+
+.Content a {
+    display: inline-block;
+    padding: 8px 5px;
+    text-decoration: none;
+    font-size: inherit;
+    color: #8b8b8b;
+}
+
+.Content a:hover {
+    color: #070707;
+    background-color: rgb(255, 174, 121);
+}
+
+.Content a:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 300px) {
+    .ToggleBtn {
+        width: 75px;
+    }
+}
+@media (min-width: 600px) {
+    .ToggleBtn {
+        width: 100px;
+    }
+}
+@media (min-width: 800px) {
+    .ToggleBtn {
+        width: 120px;
+    }
+}
+@media (min-width: 1200px) {
+    .ToggleBtn {
+        width: 160px;
+    }
+}
